@@ -2,6 +2,10 @@ import socket
 import os
 import sys
 
+def is_safe(filename):
+    """make sure only serve files from inside the static folder"""
+    return os.path.normpath(filename) == filename and filename.startswith("static/")
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 sock.bind(("0.0.0.0", int(sys.argv[1])))
@@ -16,8 +20,8 @@ while True:
     a,filename,c = lines[0].split()
     if filename == '/':
         filename = "/index.html"
-    filename = "static" + filename
-    if os.path.exists(filename):       
+    filename = "static" + filename    
+    if os.path.exists(filename) and is_safe(filename): 
         if filename.endswith(".txt") or filename.endswith(".html"):
             with open(filename) as stream:
                 http_body = stream.read()
@@ -66,17 +70,3 @@ while True:
         ]
         conn.send("\r\n".join(http_headers).encode())
         conn.close()
-
-
-"""
-b"GET / HTTP/1.1",
-b"Host: 127.0.0.1:8000",
-b"Connection: keep-alive",
-b"User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.74.2 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36",
-b"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-b"Accept-Encoding: gzip, deflate, br",
-b"Accept-Language: en-US",
-b""
-"""
-
-
