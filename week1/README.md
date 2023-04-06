@@ -35,3 +35,25 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Session
 	data = clientsocket.recv(10000)
 	response = "..."
 	clientsocket.send(response)	
+
+# HTTP Status codes
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+200 OK
+404 NOT FOUND
+500 INTERNAL SERVER ERROR
+
+Python as a web server:
+https://www.digitalocean.com/community/tutorials/python-simplehttpserver-http-server
+
+More python web servers:
+https://geekflare.com/python-web-servers/
+https://github.com/web2py/rocket3
+
+Non-python web server:
+https://www.nginx.com/
+
+# HTML
+
+# CSS
