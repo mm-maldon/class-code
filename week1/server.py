@@ -19,7 +19,7 @@ def response_ok(http_body, mime_type):
     return "\r\n".join(http_headers).encode() + b"\r\n" + http_body
 
 def response_404():
-    return b"HTTP/1.1 404 FILE NOT FOUND\r\n\r\n"
+    return b"HTTP/1.1 404 FILE NOT FOUNDr\\n\r\n"
 
 def response_500():
     return b"HTTP/1.1 500 INTERNAL SERVER ERROR\r\n\r\n"
@@ -51,7 +51,7 @@ def main(port):
         if not os.path.exists(filename) or not is_safe(filename): 
             conn.send(response_404())
         else:
-            extension = filename.split(".")[-1]
+            print(filename)
             with open(filename, "rb") as stream:
                 http_body = stream.read()
             if extension in MIME_TYPES:

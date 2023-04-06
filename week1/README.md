@@ -56,4 +56,23 @@ https://www.nginx.com/
 
 # HTML
 
+<a> href
+<img> src
+<div> style class id
+
 # CSS
+
+<div class="myclass" id="myid">
+  <div>
+    <a>link</a>
+  </div>
+<div>
+
+#myid {}
+.myclass {}
+div {}
+div.myclass {}
+div#myid {}
+div.myclass#myid {}
+div.myclass#myid div {}
+div.myclass#myid div a {}
