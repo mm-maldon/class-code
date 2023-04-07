@@ -24,7 +24,7 @@ You can work in groups for this assignment, and discuss it with others; turn in 
 ## Rubric
 
 | Points | Criterion |
-| ====== | ========= |
+| ------ | --------- |
 | 1.0 |	Does the top bar contain the icon, UCSC logo, and date, reasonably well aligned? |
 | 1.0 |	Does the mountain lion story span two columns? |
 | 1.0 |	Does the professor de Alfaro story span the rightmost column? |
