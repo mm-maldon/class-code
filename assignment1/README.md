@@ -9,7 +9,7 @@ Due April 13 by 11:59PM.
 
 ## Details
 
-You need to create a web page that looks like the image below.  
+You need to create a web page that looks like the image ![image](website_to_replicate.png)
 
 Before doing the homework, you should study the material in Unit 2.
 
