@@ -8,8 +8,17 @@
     
     
     <div class="box has-background-info mx-2 mt-2">
-        <img src="logo.png">
+        <div class="columns is-mobile">
+            <div class="column is-four-fifths">
+                <img src="logo.png">
+            </div>
+            <div class="column">
+                <h1 class="text is-size-5 has-text-right has-text-white mt-6">January 8, 2012</h1>
+            </div>
+        </div>
     </div>
+
+    
     
 </head>
 
@@ -20,7 +29,7 @@
     <div class="column is-two-thirds">
         <h1 class="title is-2 pb-0 my-0 mx-6">Mountain Lion Sighted on Campus</h1>
         <h2 class="text is-size-4 pt-0 mx-6">Claims to be intrested in web development</h2>
-        <div class="columns mx-4">
+        <div class="columns is-mobile mx-4">
             <div class="column">
                 <div class="box">
                     <img src="lion-layers-2.svg">
@@ -33,25 +42,29 @@
         
             </div>
             <div class="column">
-                <b1 class="text is-size-6">
+                <i class="text is-size-6">
                     "It is truly disappointing! Great minds, such as Don Knuth and Leslie Lamport, devoted their time to improving the art of typography and the 
                     science of optimizing the presentation of content on a page, and then here come like a band of savages these web developers, oblivious to the 
                     great work of the past, with this completely inane and baroque language!".
-                </b1>
+                </i>
                 <b1 class="text is-size-6">
         
                 </b1>
-                <b2 class="text is-size-6">
-                    He continued, "First they invented a lot of tags. Then they fell out of love for them, and decided it's cooler to do things using the same few tags all over the place, decorating them with yet another language called CSS (the name at least it reminds me of my feeling towards it, for I know latin). So now you need two languages to get one thing accomplished! And the whole thing is so complex that to lay down something with a few columns on a page, you practically need a university degree! And look! It cannot even balance the content on these two colums, for goodness sake!"
+                <p class="text is-size-6">
+                    He continued, <i>"First they invented a lot of tags. Then they fell out of love for them, and decided it's cooler to do
+                    things using the same few tags all over the place, decorating them with yet another language called CSS (the name at 
+                    least it reminds me of my feeling towards it, for I know latin). So now you need two languages to get one thing 
+                    accomplished! And the whole thing is so complex that to lay down something with a few columns on a page, you practically 
+                    need a university degree! And look! It cannot even balance the content on these two colums, for goodness sake!"</i>
                     The police thought it better to leave the lion alone, as he looked quite ready to bite anyone who came close.
-                </b2>
+                </p>
             </div>
         </div>
     </div>
     <div class="column">
         <h1 class="title is-2 my-0">Professor de Alfaro Claims Break-Through in Graphics</h1>
         <h2 class="text is-size-4">A new, very efficient algorithm enables fast scene rendering</h2>
-        <div class="columns">
+        <div class="columns is-mobile">
             <div class="column mx-0">
                 <b1 class="text is-size-6">
                     Ray-tracing is a technique for scene rendering in which the light rays that fall into an observer's eyes are retraced, so to say, in the 
@@ -66,6 +79,41 @@
     </div>
 </div>
 
+<div class="tile is-ancestor">
+    <div class="tile is-4 is-vertical is-parent ml-3">
+        <div class="tile is-child box has-background-primary">
+            <p class="text is-size-6">Ad1</p>
+        </div>
+        <div class="tile is-child box has-background-warning">
+            <p class="text is-size-6">Ad2</p>
+        </div>
+    </div>
+    <div class="tile is-8 is-vertical">
+        <div class="tile is-horizontal">
+            <div class="tile is-vertical is-parent">
+                <div class="tile is-child box has-background-info">
+                    <p class="text is-size-6">Ad3</p>
+                </div>
+                <div class="tile is-child box has-background-info">
+                    <p class="text is-size-6">Ad4</p>
+                </div> 
+            </div>
+            <div class="tile is-vertical is-parent">
+                <div class="tile is-child box has-background-success">
+                    <p class="text is-size-6">Ad5</p>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-vertical is-parent">
+            <div class="tile is-child box has-background-danger">
+                <p class="text is-size-6">Ad5</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
 </body>
 
 </html>
+
